@@ -48,7 +48,7 @@ public class FunctionalLibrary {
 
 	public static WebDriver driverInit(String BrowserName) {
 
-		System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\lib\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Greens-11\\git\\Delta_Jan9.15\\src\\test\\resources\\lib\\chromedriver.exe");
 		if (BrowserName.equals("chrome")) {
 			driver = new ChromeDriver();
 		}
@@ -168,6 +168,7 @@ public class FunctionalLibrary {
 	 * @return
 	 */
 	public static int getWindowCount() {
+	
 		return driver.getWindowHandles().size();
 	}
 

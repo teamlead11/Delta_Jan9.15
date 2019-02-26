@@ -1,5 +1,7 @@
 package com.stepdefinition;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,11 +30,16 @@ public class HomePageSteps extends FunctionalLibrary {
 		HomePage home = new HomePage();
 		click(home.getLnk_SourceName());
 		setText(home.getTxt_txt_SearchInputName(), myList.get(0));
-		waitForElementVisibility(home.getEle_AiportList());
+		Thread.sleep(3000);
+		Robot r=new Robot();
+		r.keyPress(KeyEvent.VK_TAB);
+		r.keyRelease(KeyEvent.VK_TAB);
+		//waitForElementVisibility(home.getEle_AiportList());
 		home.getTxt_txt_SearchInputName().sendKeys(Keys.ENTER);
 		click(home.getLnk_DestName());
 		setText(home.getTxt_txt_SearchInputName(), myList.get(1));
-		waitForElementVisibility(home.getEle_AiportList());
+		//waitForElementVisibility(home.getEle_AiportList());
+		Thread.sleep(3000);
 		home.getTxt_txt_SearchInputName().sendKeys(Keys.ENTER);
 
 	}
@@ -77,11 +84,16 @@ public class HomePageSteps extends FunctionalLibrary {
 		HomePage home = new HomePage();
 		click(home.getLnk_SourceName());
 		setText(home.getTxt_txt_SearchInputName(), tripList.get(0));
-		waitForElementVisibility(home.getEle_AiportList());
+		Thread.sleep(3000);
+		Robot r=new Robot();
+		r.keyPress(KeyEvent.VK_TAB);
+		r.keyRelease(KeyEvent.VK_TAB);
+		//waitForElementVisibility(home.getEle_AiportList());
 		home.getTxt_txt_SearchInputName().sendKeys(Keys.ENTER);
 		click(home.getLnk_DestName());
 		setText(home.getTxt_txt_SearchInputName(), tripList.get(1));
-		waitForElementVisibility(home.getEle_AiportList());
+		//waitForElementVisibility(home.getEle_AiportList());
+		Thread.sleep(3000);
 		home.getTxt_txt_SearchInputName().sendKeys(Keys.ENTER);
 	}
 
@@ -162,14 +174,17 @@ public class HomePageSteps extends FunctionalLibrary {
 		HomePage home = new HomePage();
 		click(home.getLnk_SourceName());
 		setText(home.getTxt_txt_SearchInputName(), detailsList.get(0));
-		waitForElementVisibility(home.getEle_AiportList());
+		Thread.sleep(3000);
+		Robot r=new Robot();
+		r.keyPress(KeyEvent.VK_TAB);
+		r.keyRelease(KeyEvent.VK_TAB);
+		//waitForElementVisibility(home.getEle_AiportList());
 		home.getTxt_txt_SearchInputName().sendKeys(Keys.ENTER);
-		waitForElementClickable(home.getLnk_DestName());
 		click(home.getLnk_DestName());
 		setText(home.getTxt_txt_SearchInputName(), detailsList.get(1));
-		waitForElementVisibility(home.getEle_AiportList());
+		//waitForElementVisibility(home.getEle_AiportList());
+		Thread.sleep(3000);
 		home.getTxt_txt_SearchInputName().sendKeys(Keys.ENTER);
-		waitForElementClickable(home.getDrp_tripTypeDownArrow());
 		click(home.getDrp_tripTypeDownArrow());
 		home.SelectByText(detailsList.get(2));
 		click(home.getCal_departureDate());

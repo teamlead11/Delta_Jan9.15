@@ -3,7 +3,7 @@
     "comments": [
       {
         "line": 1,
-        "value": "#Author: your.email@your.domain.com"
+        "value": "#Author: Greens tech"
       }
     ],
     "line": 3,
@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 4046350383,
+              "duration": 4039063909,
               "status": "passed"
             },
             "match": {
@@ -20,19 +20,30 @@
             }
           }
         ],
-        "line": 6,
-        "name": "To verify the list of boeing aircrafts",
+        "line": 5,
+        "name": "",
         "description": "",
-        "id": "to-verify-the-list-of-aircrafts-under-aircraft-module;to-verify-the-list-of-boeing-aircrafts",
+        "id": "verify-round-trip-functionality;",
+        "after": [
+          {
+            "result": {
+              "duration": 3081652099,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.afterScenario()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7401867175,
+              "duration": 7657551339,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "The User is in Delta homepage",
             "match": {
               "location": "HomePageSteps.the_User_is_in_Delta_homepage()"
@@ -41,72 +52,80 @@
           },
           {
             "result": {
-              "duration": 20164377127,
+              "duration": 7213099898,
               "status": "passed"
             },
-            "line": 8,
-            "name": "The user navigates to aircraft section under travel info",
+            "line": 7,
+            "name": "The user selects source and destination",
             "match": {
-              "location": "HomePageSteps.the_user_navigates_to_aircraft_section_under_travel_info()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 15450399550,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "The user selects the boeing under our aircraft section",
-            "match": {
-              "location": "AircraftSteps.the_user_selects_the_boeing_under_our_aircraft_section()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 180465609,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "The user should see the list of aircrafts",
-            "match": {
-              "location": "AircraftSteps.the_user_should_see_the_list_of_aircrafts(DataTable)"
+              "location": "HomePageSteps.the_user_selects_source_and_destination(DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "Boeing 717",
-                  "Boeing 737-700",
-                  "Boeing 737-800",
-                  "Boeing 737-900 ER",
-                  "Boeing 757-200",
-                  "Boeing 757-300",
-                  "Boeing 767-300",
-                  "Boeing 767-300ER",
-                  "Boeing 767-400ER",
-                  "Boeing 777-200ER",
-                  "Boeing 777-200LR"
+                  "ATL",
+                  "MSP"
                 ],
-                "line": 11
+                "line": 8
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1311449131,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user selects trip type, dates and number of passengers",
+            "match": {
+              "location": "HomePageSteps.the_user_selects_trip_type_dates_and_number_of_passengers(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Round Trip",
+                  "03/25",
+                  "03/28",
+                  "2 Passengers"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5240560723,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user should see the list of flights",
+            "match": {
+              "location": "FlightSearchResultsSteps.the_user_should_see_the_list_of_flights(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "DL 2811",
+                  "DL 2823",
+                  "DL 2827",
+                  "DL 2815",
+                  "DL 2819"
+                ],
+                "line": 12
               }
             ],
             "keyword": "Then "
           }
-        ],
-        "tags": [
-          {
-            "line": 5,
-            "name": "@tag1"
-          }
         ]
       }
     ],
-    "name": "To verify the list of aircrafts under aircraft module",
+    "name": "Verify round trip functionality",
     "description": "",
-    "id": "to-verify-the-list-of-aircrafts-under-aircraft-module",
+    "id": "verify-round-trip-functionality",
     "keyword": "Feature",
-    "uri": "src/test/resources/feature/Aircraft/AircraftList.feature",
+    "uri": "src/test/resources/feature/BookAflight/RoundTrip.feature",
     "tags": [
       {
         "line": 2,
