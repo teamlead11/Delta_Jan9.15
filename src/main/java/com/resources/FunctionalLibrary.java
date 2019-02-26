@@ -61,7 +61,7 @@ public class FunctionalLibrary {
 			driver = new FirefoxDriver();
 		}
 
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		return driver;
@@ -352,7 +352,7 @@ public class FunctionalLibrary {
 	 */
 	public static void waitForElementVisibility(WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, 60);
-		wait.until(ExpectedConditions.visibilityOf(element));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("test")));
 	}
 
 	public static void waitForElementClickable(WebElement element) {
