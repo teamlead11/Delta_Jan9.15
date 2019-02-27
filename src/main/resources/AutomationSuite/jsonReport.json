@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 4046350383,
+              "duration": 4928288328,
               "status": "passed"
             },
             "match": {
@@ -21,15 +21,26 @@
           }
         ],
         "line": 6,
-        "name": "To verify the list of boeing aircrafts",
+        "name": "To test the steps in comment section",
         "description": "",
-        "id": "to-verify-the-list-of-aircrafts-under-aircraft-module;to-verify-the-list-of-boeing-aircrafts",
+        "id": "to-test-comment-and-complaint-section;to-test-the-steps-in-comment-section",
+        "after": [
+          {
+            "result": {
+              "duration": 4074523792,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.afterScenario()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7401867175,
+              "duration": 39403298025,
               "status": "passed"
             },
             "line": 7,
@@ -41,54 +52,36 @@
           },
           {
             "result": {
-              "duration": 20164377127,
+              "duration": 13957663772,
               "status": "passed"
             },
             "line": 8,
-            "name": "The user navigates to aircraft section under travel info",
+            "name": "The user navigates to comment and complain section",
             "match": {
-              "location": "HomePageSteps.the_user_navigates_to_aircraft_section_under_travel_info()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 15450399550,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "The user selects the boeing under our aircraft section",
-            "match": {
-              "location": "AircraftSteps.the_user_selects_the_boeing_under_our_aircraft_section()"
+              "location": "HomePageSteps.the_user_navigates_to_comment_and_complain_section()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 180465609,
-              "status": "passed"
+              "duration": 196152952,
+              "error_message": "java.lang.AssertionError: expected:\u003c[STEP 1 TELL US ABOUT THE TOPIC, STEP 2 TELL US ABOUT YOURSELF, STEP 3 TELL US ABOUT THE DETAILS, STEP 4TELL US ABOUT THE COMMENT/COMPLAINT]\u003e but was:\u003c[STEP 1 | TELL US ABOUT THE TOPIC, STEP 2 | TELL US ABOUT YOURSELF, STEP 3 | TELL US ABOUT THE DETAILS, STEP 4| TELL US ABOUT THE COMMENT/COMPLAINT]\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:118)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat com.stepdefinition.CommentComplaint.the_user_should_see_the_four_steps(CommentComplaint.java:27)\r\n\tat ✽.Then The user should see the four steps(src/test/resources/feature/Comment/Comment.feature:9)\r\n",
+              "status": "failed"
             },
-            "line": 10,
-            "name": "The user should see the list of aircrafts",
+            "line": 9,
+            "name": "The user should see the four steps",
             "match": {
-              "location": "AircraftSteps.the_user_should_see_the_list_of_aircrafts(DataTable)"
+              "location": "CommentComplaint.the_user_should_see_the_four_steps(DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "Boeing 717",
-                  "Boeing 737-700",
-                  "Boeing 737-800",
-                  "Boeing 737-900 ER",
-                  "Boeing 757-200",
-                  "Boeing 757-300",
-                  "Boeing 767-300",
-                  "Boeing 767-300ER",
-                  "Boeing 767-400ER",
-                  "Boeing 777-200ER",
-                  "Boeing 777-200LR"
+                  "STEP 1 TELL US ABOUT THE TOPIC",
+                  "STEP 2 TELL US ABOUT YOURSELF",
+                  "STEP 3 TELL US ABOUT THE DETAILS",
+                  "STEP 4TELL US ABOUT THE COMMENT/COMPLAINT"
                 ],
-                "line": 11
+                "line": 10
               }
             ],
             "keyword": "Then "
@@ -102,11 +95,11 @@
         ]
       }
     ],
-    "name": "To verify the list of aircrafts under aircraft module",
+    "name": "To test comment and complaint section",
     "description": "",
-    "id": "to-verify-the-list-of-aircrafts-under-aircraft-module",
+    "id": "to-test-comment-and-complaint-section",
     "keyword": "Feature",
-    "uri": "src/test/resources/feature/Aircraft/AircraftList.feature",
+    "uri": "src/test/resources/feature/Comment/Comment.feature",
     "tags": [
       {
         "line": 2,

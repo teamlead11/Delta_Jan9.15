@@ -91,8 +91,15 @@ public class HomePage {
 	@FindBy(xpath = "//a[text()='Shop Hotels']")
 	private WebElement menu_ShopHotel;
 
+	@FindBy(xpath = "//a[text()='Comment/Complaint']")
+	private WebElement menu_commentComplaint;
+
 	public WebElement getMenu_ShopHotel() {
 		return menu_ShopHotel;
+	}
+
+	public WebElement getMenu_commentComplaint() {
+		return menu_commentComplaint;
 	}
 
 	public WebElement getMenu_More() {

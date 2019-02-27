@@ -207,4 +207,12 @@ public class HomePageSteps extends FunctionalLibrary {
 		click(home.getLnk_travelInfo());
 		click(home.getLnk_aircraft());
 	}
+
+	@When("^The user navigates to comment and complain section$")
+	public void the_user_navigates_to_comment_and_complain_section() throws Throwable {
+		HomePage home = new HomePage();
+		click(home.getMenu_More());
+		click(home.getMenu_commentComplaint());
+
+	}
 }
