@@ -352,12 +352,16 @@ public class FunctionalLibrary {
 	 */
 	public static void waitForElementVisibility(WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, 60);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("test")));
+		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
 	public static void waitForElementClickable(WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
+	public static void waitForTitle(String title) {
+		WebDriverWait wait = new WebDriverWait(driver, 60);
+		wait.until(ExpectedConditions.titleContains(title));
 	}
 
 	/**

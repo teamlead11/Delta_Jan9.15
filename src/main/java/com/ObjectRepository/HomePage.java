@@ -94,6 +94,33 @@ public class HomePage {
 	@FindBy(xpath = "//a[text()='Comment/Complaint']")
 	private WebElement menu_commentComplaint;
 
+	@FindBy(xpath = "//a[text()='Mobile' and @target='_self']")
+	private WebElement lnk_mobile;
+
+	public WebElement getTxt_SearchInputName() {
+		return txt_SearchInputName;
+	}
+
+	public WebElement getList_Airport() {
+		return List_Airport;
+	}
+
+	public WebElement getTripType_Arrow() {
+		return tripType_Arrow;
+	}
+
+	public WebElement getPassengerCount_Arrow() {
+		return passengerCount_Arrow;
+	}
+
+	public WebElement getMenuFlighStatus() {
+		return menuFlighStatus;
+	}
+
+	public WebElement getLnk_mobile() {
+		return lnk_mobile;
+	}
+
 	public WebElement getMenu_ShopHotel() {
 		return menu_ShopHotel;
 	}

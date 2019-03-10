@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 4928288328,
+              "duration": 4050368926,
               "status": "passed"
             },
             "match": {
@@ -21,13 +21,13 @@
           }
         ],
         "line": 6,
-        "name": "To test the steps in comment section",
+        "name": "To verify  the mobile section navigation to play store",
         "description": "",
-        "id": "to-test-comment-and-complaint-section;to-test-the-steps-in-comment-section",
+        "id": "to-test-the-mobile-sectoin;to-verify--the-mobile-section-navigation-to-play-store",
         "after": [
           {
             "result": {
-              "duration": 4074523792,
+              "duration": 2092481668,
               "status": "passed"
             },
             "match": {
@@ -40,7 +40,7 @@
         "steps": [
           {
             "result": {
-              "duration": 39403298025,
+              "duration": 8083291401,
               "status": "passed"
             },
             "line": 7,
@@ -52,36 +52,44 @@
           },
           {
             "result": {
-              "duration": 13957663772,
+              "duration": 10740981369,
               "status": "passed"
             },
             "line": 8,
-            "name": "The user navigates to comment and complain section",
+            "name": "The user navigates to mobile section",
             "match": {
-              "location": "HomePageSteps.the_user_navigates_to_comment_and_complain_section()"
+              "location": "HomePageSteps.the_user_navigates_to_mobile_section()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 196152952,
-              "error_message": "java.lang.AssertionError: expected:\u003c[STEP 1 TELL US ABOUT THE TOPIC, STEP 2 TELL US ABOUT YOURSELF, STEP 3 TELL US ABOUT THE DETAILS, STEP 4TELL US ABOUT THE COMMENT/COMPLAINT]\u003e but was:\u003c[STEP 1 | TELL US ABOUT THE TOPIC, STEP 2 | TELL US ABOUT YOURSELF, STEP 3 | TELL US ABOUT THE DETAILS, STEP 4| TELL US ABOUT THE COMMENT/COMPLAINT]\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:118)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat com.stepdefinition.CommentComplaint.the_user_should_see_the_four_steps(CommentComplaint.java:27)\r\n\tat ✽.Then The user should see the four steps(src/test/resources/feature/Comment/Comment.feature:9)\r\n",
-              "status": "failed"
+              "duration": 286613762,
+              "status": "passed"
             },
             "line": 9,
-            "name": "The user should see the four steps",
+            "name": "The user clicks the play store icon",
             "match": {
-              "location": "CommentComplaint.the_user_should_see_the_four_steps(DataTable)"
+              "location": "MobileSteps.the_user_clicks_the_play_store_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2788097400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user should see the play store page",
+            "match": {
+              "location": "CommonSteps.the_user_should_see_the_play_store_page(DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "STEP 1 TELL US ABOUT THE TOPIC",
-                  "STEP 2 TELL US ABOUT YOURSELF",
-                  "STEP 3 TELL US ABOUT THE DETAILS",
-                  "STEP 4TELL US ABOUT THE COMMENT/COMPLAINT"
+                  "Fly Delta - Apps on Google Play"
                 ],
-                "line": 10
+                "line": 11
               }
             ],
             "keyword": "Then "
@@ -95,11 +103,11 @@
         ]
       }
     ],
-    "name": "To test comment and complaint section",
+    "name": "To test the mobile sectoin",
     "description": "",
-    "id": "to-test-comment-and-complaint-section",
+    "id": "to-test-the-mobile-sectoin",
     "keyword": "Feature",
-    "uri": "src/test/resources/feature/Comment/Comment.feature",
+    "uri": "src/test/resources/feature/Mobile/Mobile.feature",
     "tags": [
       {
         "line": 2,
